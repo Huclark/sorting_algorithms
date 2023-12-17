@@ -1,5 +1,7 @@
 #include "sort.h"
 
+void merge(int *array, size_t mid, size_t size);
+
 /**
  * merge_sort - Sorts an array of integers in ascending order using merge sort
  * @array: The array to be sorted
