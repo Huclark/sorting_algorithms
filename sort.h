@@ -3,6 +3,7 @@
 
 /* Standard library headers */
 #include <stdio.h>
+#include <stdlib.h>
 
 
 /**
@@ -20,14 +21,19 @@ typedef struct listint_s
 } listint_t;
 
 /* Custom functions */
-void print_array(const int *array, size_t size);
-void print_list(const listint_t *list);
-void bubble_sort(int *array, size_t size);
-void insertion_sort_list(listint_t **list);
-void selection_sort(int *array, size_t size);
-void quick_sort(int *array, size_t size);
-int lomuto_partition(int *array, size_t size, int l, int h);
-void lomuto_sort(int *array, size_t size, int l, int h);
-void shell_sort(int *array, size_t size);
+void print_array(const int *, size_t);
+void print_list(const listint_t *);
+void bubble_sort(int *, size_t);
+void insertion_sort_list(listint_t **);
+void selection_sort(int *, size_t);
+void quick_sort(int *, size_t);
+int lomuto_partition(int *, size_t, int, int);
+void lomuto_sort(int *, size_t, int, int);
+void shell_sort(int *, size_t);
+void cocktail_sort_list(listint_t **);
+void swap_nodes(listint_t **, listint_t *, listint_t *);
+void merge_sort(int *, size_t);
+void merge_sort_recursive(int *, size_t);
+void merge(int *, size_t, size_t);
 
 #endif
