@@ -35,5 +35,8 @@ void swap_nodes(listint_t **, listint_t *, listint_t *);
 void merge_sort(int *, size_t);
 void merge_sort_recursive(int *, size_t);
 void merge(int *, size_t, size_t);
+void quick_sort_hoare(int *, size_t);
+void quick_sort_recursive_hoare(int *, int, int);
+int hoare_partition(int *array, int low, int high);
 
 #endif
